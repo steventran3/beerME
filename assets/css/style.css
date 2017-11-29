@@ -2,18 +2,21 @@ header, main, footer {
     padding-left: 0px;
 }
 .area {
-    background-color: #ccc;
-    border: 3px solid #000;
+    background-color: #efebe9;
+    border: 3px solid #eeeeee;
     width: 100%;
 }
 .area .card, .card {
     max-width: 300px;
-    margin-left: 19%;
-    margin-right: auto !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+
 }
 .area .card .card-content, .card .card-content {
     padding-top: 1rem;
     padding-bottom: 1rem;
+
 }
 .area .card-content .card-title, .card-content .card-title {
     line-height: 2rem;
@@ -24,24 +27,7 @@ header, main, footer {
 .card-content .card-subtitle {
     font-size: 0.875rem;
     margin-bottom: 0.5rem !important
-}
-.badge.win {
-    font-weight: 300;
-    font-size: 0.8rem;
-    color: #fff;
-    background-color: #26a69a;
-    border-radius: 2px;
-    right: 0rem;
-    max-height: 12px;
-}
-.badge.hot {
-    font-weight: 300;
-    font-size: 0.8rem;
-    color: #fff;
-    background-color: #ef5350;
-    border-radius: 2px;
-    right: 0rem;
-    max-height: 12px;
+
 }
 
 
@@ -50,11 +36,12 @@ header, main, footer {
 
 .default_color_text{color: #2196F3 !important}
 
+
 .icon-block {
     padding: 0 15px;
 }
 
-#intro, #work, #team {padding-top: 4rem;}
+#intro, #results, #previous {padding-top: 4rem;}
 
 
 #index-banner {
@@ -104,7 +91,7 @@ header, main, footer {
 
 .card-content a:hover {color: #2196F3;}
 
-#work, #team{background: rgb(247, 247, 247);}
+#results, #previous{background: rgb(247, 247, 247);}
 
 .text_pink{color:#EF9A9A;}
 

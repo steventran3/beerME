@@ -12,6 +12,9 @@
     
     <!-- File Stack -->
     <script src="https://static.filestackapi.com/v3/filestack.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 </head>
 <body id="top" class="scrollspy">
 
@@ -31,14 +34,14 @@
                 <div class="nav-wrapper">
                     <a href="#" id="logo-container" class="brand-logo">Beer ME</a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="#intro">Service</a></li>
-                        <li><a href="#work">Results</a></li>
-                        <li><a href="#team">Previous</a></li>                    
+                        <li><a href="#beer-me">Beer Me</a></li>
+                        <li><a href="#results">Results</a></li>
+                        <li><a href="#previous">Previous</a></li>                    
                     </ul>
                     <ul id="nav-mobile" class="side-nav">
-                        <li><a href="#intro">Service</a></li>
-                        <li><a href="#work">Results</a></li>
-                        <li><a href="#team">Previous</a></li>                    
+                        <li><a href="#service">Beer Me</a></li>
+                        <li><a href="#results">Results</a></li>
+                        <li><a href="#previous">Previous</a></li>                    
                     </ul>
                     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
                 </div>
@@ -61,7 +64,7 @@
     </div>
 
     <!--Intro and service-->
-    <div id="intro" class="section scrollspy">
+    <div id="beer-me" class="section scrollspy">
         <div class="container">
             <div class="row">
                 <div  class="col s12">
@@ -73,26 +76,23 @@
                         <div class="input-field col s12">
                           <input id="name" type="text" >
                           <label for="name">Name</label>
+                        </div>
                         <div class="input-field col s12">
                           <input id="zipcode" type="text" >
                           <label for="zipcode">Zipcode</label>
-                          <a class="waves-effect waves-light brown lighten-2 btn">Upload Photo</a>
-                          
-                      </div>
-                  </div>
-              </form>
-          </div> 
-
-      </div>
-  </div>
-</div>
+                          <a class="waves-effect waves-light brown lighten-2 btn">Upload Photo</a>                      
+                        </div>      
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
 
 <!--Results-->
 <div class="section scrollspy" id="results">
     <div class="container">
-        <h2 class="header text_b">Results</h2>
-        <div class="row">
-
+        <h2 class="header text_b">Brewery Match</h2>
+        <div class="row current-match">
         </div>
     </div>
 </div>
@@ -105,16 +105,14 @@
 <!--Previous-->
 <div class="section scrollspy" id="previous">
     <div class="container">
-        <h2 class="header text_b"> Previous </h2>
-        <div class="row">
-
+        <h2 class="header text_b"> Previous Breweries </h2>
+        <div class="row prev_match">
         </div>
     </div>
 </div>
 
 <!--Footer-->
-<footer class='brown lighten-2 page-footer'>
-    
+<footer class='brown lighten-2 page-footer'>    
     <div class='footer-copyright'>
         <div class='container'>
            © 2017 Beer ME! 
