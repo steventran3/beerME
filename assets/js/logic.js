@@ -20,7 +20,7 @@ $(document).ready(function(){
         // const client = filestack.init('ACvWqWhqT0uESSK94Rojtz');
         // client.pick();
         $('.current-match').empty()
-        $('#results,#previous,.nav-hide').show()
+        
 
         var fsClient = filestack.init('ACvWqWhqT0uESSK94Rojtz');
 
@@ -101,6 +101,7 @@ $(document).ready(function(){
                     }) 
                     $('#zipcode').val('')
                     $('#name').val('')
+                    $('#results,#previous,.nav-hide').show()
                   }
                   var person = {
                     'card': [{
