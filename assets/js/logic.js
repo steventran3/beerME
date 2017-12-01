@@ -92,7 +92,7 @@ $(document).ready(function(){
                       'card': [{
                         'image-url': img,
                         'card_title': breweryName,
-                        'card_subtitle': 'Address: '+address+'<br>City: '+city+'<br>Phone: '+phone+'<br>Website: '+website,
+                        'card_subtitle': 'Address: '+address+'<br>City: '+city+'<br>Phone: '+phone+'<br>Website: <a href="'+website+'" target="blank">'+website+'</a>',
                       }]
                     }
                     $.each(newBrew.card, function (key,data){
@@ -136,7 +136,7 @@ $(document).ready(function(){
           'card': [{
             'image-url': img,
             'card_title': breweryName,
-            'card_subtitle': 'Address: '+address+'<br>City: '+city+'<br>Phone: '+phone+'<br>Website: '+website,          
+            'card_subtitle': 'Address: '+address+'<br>City: '+city+'<br>Phone: '+phone+'<br>Website: <a href="'+website+'" target="blank">'+website+'</a>',          
           }]
         }
         $.each(newBrew.card, function (key,data){
